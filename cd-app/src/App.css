@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  margin: 20px;
+  font-size: 15px;
+  font-family   : "Times New Roman";
+}
+
+body {
+  background-color: #313e50;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 15px;
+}
+
+label{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input, textarea{
+    color: #313E50;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+
+.form form > *:nth-child(2n) {
+  margin-bottom: 10px;
+}
+
+#responsibilities {
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.resume {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(11, 50px);
+  margin: 20px;
+  padding: 1in;
+  width: 8in;
+  min-width: 8in;
+  max-width: 8in;
+  background-color: white;
+  justify-self: center;
+  display: grid;
+  box-shadow: 10px 5px .4em black;
+}
+
+.name {
+  grid-column: 1/3;
+  font-weight: bold;
+  justify-self: center;
+  font-size: 20px;
+}
+
+.email-number {
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+.section {
+  grid-column: 1/3;
+}
+
+.line {
+  grid-column: 1/3;
+  background-color: black;
+  height: 2px;
+  margin: 5px;
+}
+
+.school-name {
+  grid-column: 1/3;
+  font-weight: bold;
+}
+
+.major {
+  grid-column: 1/2;
+  font-style: italic;
+}
+
+.grad {
+  grid-column: 2/3;
+  font-style: italic;
+  justify-self: end;
+}
+
+.company-name {
+  grid-column: 1/3;
+  font-weight: bold;
+}
+
+.position-title {
+  grid-column: 1/2;
+  font-style: italic;
+}
+
+.dates {
+  grid-column: 2/3;
+  font-style: italic;
+  justify-self: end;
+}
+
+.responsibilities {
+  grid-column: 1/3;
+}
+
+button{
+
+    background-color: white;
+    padding: 5px 25px;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313E50;
+    text-align: center;
+    margin-top: 10px;
+}

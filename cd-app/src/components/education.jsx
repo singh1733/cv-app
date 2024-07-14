@@ -5,6 +5,7 @@ export function Education({
   setMajor,
   grad,
   setGrad,
+  editable,
 }) {
   function handleSchoolNameChange(e) {
     setSchoolName(e.target.value);
@@ -18,6 +19,7 @@ export function Education({
     setGrad(e.target.value);
   }
 
+
   return (
     <form>
       <label htmlFor="school-name">School Name:</label>
@@ -28,6 +30,7 @@ export function Education({
         placeholder="School Name"
         value={schoolName}
         onChange={handleSchoolNameChange}
+        readOnly={!editable}
       />
       <label htmlFor="major">Major:</label>
       <input
@@ -37,6 +40,7 @@ export function Education({
         placeholder="Major"
         value={major}
         onChange={handleMajorChange}
+        readOnly={!editable}
       />
       <label htmlFor="grad">Graduation Date:</label>
       <input
@@ -45,6 +49,7 @@ export function Education({
         name="grad"
         value={grad}
         onChange={handleGradChange}
+        readOnly={!editable}
       />
     </form>
   );

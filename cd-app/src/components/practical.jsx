@@ -9,6 +9,7 @@ export function Practical({
   setStartDate,
   endDate,
   setEndDate,
+  editable,
 }) {
   function handleCompanyNameChange(e) {
     setCompanyName(e.target.value);
@@ -38,6 +39,7 @@ export function Practical({
         placeholder="Company Name"
         value={companyName}
         onChange={handleCompanyNameChange}
+        readOnly={!editable}
       />
       <label htmlFor="position">Position:</label>
       <input
@@ -47,6 +49,7 @@ export function Practical({
         placeholder="Position"
         value={positionTitle}
         onChange={handlePositionChange}
+        readOnly={!editable}
       />
       <label htmlFor="responsibilities">Responsibilities:</label>
       <textarea
@@ -56,6 +59,7 @@ export function Practical({
         placeholder="Responsibilities"
         value={responsibilities}
         onChange={handleResponsibilitiesChange}
+        readOnly={!editable}
       />
       <label htmlFor="start">Start date:</label>
       <input
@@ -64,6 +68,7 @@ export function Practical({
         name="start"
         value={startDate}
         onChange={handleStartChange}
+        readOnly={!editable}
       />
       <label htmlFor="end">End date:</label>
       <input
@@ -72,6 +77,7 @@ export function Practical({
         name="end"
         value={endDate}
         onChange={handleEndChange}
+        readOnly={!editable}
       />
     </form>
   );

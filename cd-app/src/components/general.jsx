@@ -1,4 +1,12 @@
-export function GenForm({ name, setName, number, setNumber, email, setEmail }) {
+export function GenForm({
+  name,
+  setName,
+  number,
+  setNumber,
+  email,
+  setEmail,
+  editable,
+}) {
   function handleNameChange(e) {
     setName(e.target.value);
   }
@@ -21,6 +29,7 @@ export function GenForm({ name, setName, number, setNumber, email, setEmail }) {
         placeholder="First and last name"
         value={name}
         onChange={handleNameChange}
+        readOnly={!editable}
       />
       <label htmlFor="number">Phone Number:</label>
       <input
@@ -30,6 +39,7 @@ export function GenForm({ name, setName, number, setNumber, email, setEmail }) {
         placeholder="1234567890"
         value={number}
         onChange={handleNumberChange}
+        readOnly={!editable}
       />
       <label htmlFor="email">Email:</label>
       <input
@@ -39,6 +49,7 @@ export function GenForm({ name, setName, number, setNumber, email, setEmail }) {
         placeholder="example@gmail.com"
         value={email}
         onChange={handleEmailChange}
+        readOnly={!editable}
       />
     </form>
   );
