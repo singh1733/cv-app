@@ -19,7 +19,7 @@ function App() {
   const [positionTitle, setPositionTitle] = useState("Position Title");
   const [responsibilities, setResponsibilities] = useState("Responsibilities");
   const [startDate, setStartDate] = useState("");
-  const [endDate, setEndDate] = useState("End");
+  const [endDate, setEndDate] = useState("");
 
 
 
