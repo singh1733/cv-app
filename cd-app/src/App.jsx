@@ -3,7 +3,6 @@ import { GenForm } from "./components/general.jsx";
 import { Education } from "./components/education.jsx";
 import { Practical } from "./components/practical.jsx";
 
-
 import "./App.css";
 
 function App() {
@@ -21,40 +20,51 @@ function App() {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
 
-
-
-
   return (
     <>
-      <GenForm
-        name={name}
-        setName={setName}
-        number={number}
-        setNumber={setNumber}
-        email={email}
-        setEmail={setEmail}
-      />
-      <Education
-        schoolName={schoolName}
-        setSchoolName={setSchoolName}
-        major={major}
-        setMajor={setMajor}
-        grad={grad}
-        setGrad={setGrad}
-      />
-      <Practical
-        companyName={companyName}
-        setCompanyName={setCompanyName}
-        positionTitle={positionTitle}
-        setPositionTitle={setPositionTitle}
-        responsibilities={responsibilities}
-        setResponsibilities={setResponsibilities}
-        startDate={startDate}
-        setStartDate={setStartDate}
-        endDate={endDate}
-        setEndDate={setEndDate}
-
-      />
+      <div className="form">
+        <GenForm
+          name={name}
+          setName={setName}
+          number={number}
+          setNumber={setNumber}
+          email={email}
+          setEmail={setEmail}
+        />
+        <Education
+          schoolName={schoolName}
+          setSchoolName={setSchoolName}
+          major={major}
+          setMajor={setMajor}
+          grad={grad}
+          setGrad={setGrad}
+        />
+        <Practical
+          companyName={companyName}
+          setCompanyName={setCompanyName}
+          positionTitle={positionTitle}
+          setPositionTitle={setPositionTitle}
+          responsibilities={responsibilities}
+          setResponsibilities={setResponsibilities}
+          startDate={startDate}
+          setStartDate={setStartDate}
+          endDate={endDate}
+          setEndDate={setEndDate}
+        />
+      </div>
+      <div className="resume">
+        <div className="name">{name}</div>
+        <div className="number">{number}</div>
+        <div className="email">{email}</div>
+        <div className="school-name">{schoolName}</div>
+        <div className="major">{major}</div>
+        <div className="grad">{grad}</div>
+        <div className="company-name">{companyName}</div>
+        <div className="position-title">{positionTitle}</div>
+        <div className="responsibilities">{responsibilities}</div>
+        <div className="start-date">{startDate}</div>
+        <div className="end-date">{endDate}</div>
+      </div>
     </>
   );
 }
