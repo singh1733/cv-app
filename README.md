@@ -1,1 +1,5 @@
-# cv-app
+# CV/Resumé Generator
+
+This React project is a user-friendly application that allows users to create a CV/resumé by inputting and editing their personal, educational, and professional information. The application is structured into components, including sections for general information, educational experience, and practical work experience, showcasing skills in state management, component-based design, and event handling. Users can add, edit, and submit their details, with changes dynamically reflected in a preview of their CV, demostrating React concepts.
+
+The project is highlights some of React’s core principles, such as state and props management, component structuring, and form handling. It also features a clean and intuitive interface, with options to toggle between editing and displaying information, making it easy to maintain and extend. This application serves as an example of how to build interactive, responsive forms in React and can be further enhanced with additional styling and features like PDF export.
